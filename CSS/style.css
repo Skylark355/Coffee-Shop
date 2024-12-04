@@ -53,6 +53,30 @@ section {
   z-index: 1;
 }
 
+/* new code starts here  */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* right: 0; */
+  height: 100vh;
+  z-index: 999;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 4rem 9%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+/* new code ends here   */
 .header .logo {
   color: var(--main-color);
   font-size: 2.3rem;
@@ -106,5 +130,200 @@ section {
   transform: translate(-50%, -50%);
 }
 
-
 /* home section begins here  */
+
+.home {
+  min-height: 100vh;
+  padding-top: 150px;
+  background-image: url(../images/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+}
+
+.home .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+}
+
+.home .row .content {
+  width: 50rem;
+  padding-top: 10rem;
+}
+
+.home .row .content h3 {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 6.5rem;
+  margin-bottom: 2rem;
+}
+
+.home .row .image {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.home .image-slider {
+  text-align: center;
+  padding: 3rem 0;
+  padding-top: 15rem;
+}
+
+.home .image-slider img {
+  margin-top: 5rem;
+  height: 9rem;
+}
+
+.home .image-slider img:hover {
+  transition: 2s ease;
+  transform: rotate(360deg);
+}
+
+.home .row .image img {
+  height: 25rem;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateX(0rem) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateX(-7rem) rotate(10deg);
+  }
+}
+/* home section ends here  */
+
+/* about section begins here  */
+.about .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.about .row .image {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about .row .image img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 42rem;
+}
+
+.about .row .content .title{
+  color: var(--main-color);
+  font-size: 3rem;
+  line-height: 1.8;
+}
+
+section{
+  padding: 4% 10%;
+}
+
+.about .row .content p{
+  color: var(--main-color);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.about .row .content .btn{
+  margin: 5rem 0;
+}
+
+.about .row .content .icons-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.about .row .content .icons-container .icons{
+  /* border: var(--border); */
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.about .row .content .icons-container .icons:hover{
+  border: var(--border-hover);
+  padding: 0.9rem 1.5rem;
+  border-radius: var(--border-radius); 
+}
+/* about section ends here  */
+
+/* menu section starts here  */
+.menu{
+  background: url(../images/menu-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.menu .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.menu .box-container .box{
+  border: var(--border);
+  border-radius: var(--border-radius);
+  gap: 1.5rem;
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 42rem;
+  padding: 2rem;
+}
+
+.menu .box-container .box img{
+  height: 10rem;
+}
+
+.menu .box-container .box .content{
+  padding-left: 2rem;
+  color: var(--main-color);
+}
+
+
+.menu .box-container .box .content:hover{
+  padding: 0.9rem 1.5rem;
+  border-radius: var(--border-radius);
+  border: var(--border-radius-hover);
+}
+
+.menu .box-container .box .content h3{
+  font-size: 3rem;
+}
+
+.menu .box-container .box .content p{
+  font-size: 1.5rem;
+}
+
+.menu .box-container .box .content .price{
+  font-size: 2rem;
+  font-weight: 800;
+}
+/* menu section ends here  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+}
