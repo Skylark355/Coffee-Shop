@@ -389,14 +389,15 @@ section {
   border-bottom: 2px solid #443; */
 }
 
-.book textarea {
-  display: none;
+#textarea {
+  margin-bottom: 20px;
+  height: 100px;
 }
 
 /* book section ends here  */
 
 /* footer section begins here  */
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -487,6 +488,10 @@ section {
     flex-direction: column;
   }
 
+  .menu {
+    margin-bottom: 10rem;
+  }
+
   .menu .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -518,7 +523,193 @@ section {
     font-size: 2rem;
     font-weight: 800;
   }
+
+  .swiper-slide .box {
+    margin: 0;
+    padding: 0;
+  }
+
+  .review .review-slider .box .fa-quote-left {
+    font-size: 3rem;
+  }
+
+  .review .review-slider .box .fa-quote-right {
+    font-size: 3rem;
+  }
+
+  .swiper .review-slider {
+    height: 200px;
+  }
+
+  .review .review-slider .box {
+    margin: 0;
+  }
+
+  .book .box {
+    width: 300px;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .header .navbar .hide {
+    display: none;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .heading span {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .home {
+    margin-bottom: 20px;
+  }
+
+  .home .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home .row .content {
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+  .home .row .content h3 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .home .row .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home .row .image img {
+    height: 15rem;
+    margin-left: 60px;
+  }
+
+  .home .image-slider {
+    text-align: center;
+    padding: 3rem 0;
+    padding-top: 7rem;
+  }
+
+  .home .image-slider img {
+    margin-top: 5rem;
+    height: 7rem;
+  }
+
+  .about .row {
+    display: block;
+  }
+
+  .about .row .image {
+    margin-bottom: 30px;
+  }
+
+  .about .row .image img {
+    margin-top: 10px;
+    border-radius: 0 40px;
+  }
+
+  .about .row .content .title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .about .row .content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .about .row .content .icons-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-bottom: 10rem;
+  }
+
+  .menu .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .menu .box-container .box {
+    margin: 0;
+  }
+
+  .menu .box-container .box img {
+    height: 7rem;
+  }
+
+  .menu .box-container .box .content {
+    padding-left: 1rem;
+  }
+
+  .menu .box-container .box .content h3 {
+    font-size: 2rem;
+  }
+
+  .menu .box-container .box .content p {
+    font-size: 1rem;
+  }
+
+  .menu .box-container .box .content .price {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .swiper-slide .box {
+    margin: 0;
+    padding: 0;
+  }
+
+  .review .review-slider .box .fa-quote-left {
+    font-size: 3rem;
+  }
+
+  .review .review-slider .box .fa-quote-right {
+    font-size: 3rem;
+  }
+
+  .swiper .review-slider {
+    height: 200px;
+  }
+
+  .review .review-slider .box {
+    margin: 0;
+  }
+
+  .book .box {
+    width: 400px;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+}
+
+/* bigger screen starts here  */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   #menu-btn {
