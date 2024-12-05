@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffe Shop</title>
     <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- swiper link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@11.0.4/swiper-bundle.min.css"
+    />
+
+    <!-- for font awesome  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -13,7 +20,6 @@
   <body>
     <!-- header section begins here  -->
     <header class="header">
-      <!-- bring it back  -->
       <div
         id="menu-btn"
         class="fa-solid fa-bars"
@@ -182,90 +188,92 @@
     </section>
     <!-- menu section ends here  -->
 
-    <!-- review section begins here  -->
+    <!-- review section starts -->
     <section class="review" id="review">
       <h1 class="heading">Reviews <span>From Customers</span></h1>
+
       <div class="swiper review-slider">
-        <div class="swipper-wrapper">
+        <div class="swiper-wrapper">
           <div class="swiper-slide box">
-            <i class="fa fa-quote-left"></i>
-            <i class="fa fa-quote-right"></i>
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
             <img src="./images/pic-1.png" alt="" />
             <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              porro.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+              vel harum nulla saepe nemo repellat!
             </p>
-            <h3>Skylark Chris</h3>
+            <h3>Jane Doe</h3>
             <span>Happy Client</span>
           </div>
 
           <div class="swiper-slide box">
-            <i class="fa fa-quote-left"></i>
-            <i class="fa fa-quote-right"></i>
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
             <img src="./images/pic-2.png" alt="" />
             <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              porro.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+              vel harum nulla saepe nemo repellat!
             </p>
-            <h3>Judith Ash</h3>
+            <h3>Jane Doe</h3>
             <span>Happy Client</span>
           </div>
 
           <div class="swiper-slide box">
-            <i class="fa fa-quote-left"></i>
-            <i class="fa fa-quote-right"></i>
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
             <img src="./images/pic-3.png" alt="" />
             <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              porro.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+              vel harum nulla saepe nemo repellat!
             </p>
-            <h3>Wood Collins</h3>
+            <h3>Jane Doe</h3>
             <span>Happy Client</span>
           </div>
 
           <div class="swiper-slide box">
-            <i class="fa fa-quote-left"></i>
-            <i class="fa fa-quote-right"></i>
+            <i class="fas fa-quote-left"></i>
+            <i class="fas fa-quote-right"></i>
             <img src="./images/pic-4.png" alt="" />
             <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              porro.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+              vel harum nulla saepe nemo repellat!
             </p>
-            <h3>Janet James</h3>
+            <h3>Jane Doe</h3>
             <span>Happy Client</span>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
-    <!-- review section ends here  -->
+    <!-- review section ends -->
 
     <!-- book section begins here  -->
     <section class="book" id="book">
@@ -278,8 +286,6 @@
           name=""
           placeholder="Enter your message"
           class="box"
-          cols="30"
-          rows="10"
         ></textarea>
         <input type="submit" value="Send Message" class="btn" />
       </form>
@@ -293,6 +299,7 @@
       </div>
     </section>
     <!-- footer section ends here  -->
+    <script src="https://unpkg.com/swiper@11.0.4/swiper-bundle.min.js"></script>
     <script src="./JS/script.js"></script>
   </body>
 </html>

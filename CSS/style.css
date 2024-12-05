@@ -21,8 +21,6 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Oxygen", sans-serif;
-  /* outline: none; */
-  /* border: none; */
   text-transform: capitalize;
   transition: all 0.2s linear;
 }
@@ -323,7 +321,90 @@ section {
   font-size: 2rem;
   font-weight: 800;
 }
+
 /* menu section ends here  */
+
+/* review section starts here  */
+.review .review-slider {
+  padding: 10rem 0;
+}
+
+.review .review-slider .box {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+  user-select: none;
+}
+
+.review .review-slider .box .fa-quote-left {
+  z-index: 1;
+  color: var(--main-color);
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 6rem;
+}
+
+.review .review-slider .box .fa-quote-right {
+  z-index: 1;
+  color: var(--main-color);
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  font-size: 6rem;
+}
+
+.review .review-slider .box img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.review .review-slider {
+  padding: 10rem 0;
+  z-index: -1;
+}
+
+/* review section ends here  */
+
+/* book section begins here  */
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book .box {
+  display: block;
+  margin-top: 20px;
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  /* outline: none;
+  border: none;
+  border-bottom: 2px solid #443; */
+}
+
+.book textarea {
+  display: none;
+}
+
+/* book section ends here  */
+
+/* footer section begins here  */
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgb(192, 192, 185);
+}
+/* footer section ends here  */
 
 @media (min-width: 320px) and (max-width: 480px) {
   .header .navbar .hide {
@@ -436,5 +517,17 @@ section {
   .menu .box-container .box .content .price {
     font-size: 2rem;
     font-weight: 800;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #menu-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1281px) {
+  #menu-btn {
+    display: none;
   }
 }
